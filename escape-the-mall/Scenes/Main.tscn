@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://c1eyumc3h1lbi"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Menu" type="Node3D" parent="."]
+
+[node name="Pauze menu" type="Node3D" parent="Menu"]
+
+[node name="Start menu" type="Node3D" parent="Menu"]
+
+[node name="End menu" type="Node3D" parent="Menu"]
+
+[node name="Died" type="Node3D" parent="."]
+
+[node name="Time Line" type="Node3D" parent="."]
+
+[node name="World" type="Node3D" parent="Time Line"]
+
+[node name="Objects" type="Node3D" parent="Time Line/World"]
+
+[node name="Interactable" type="Node3D" parent="Time Line/World/Objects"]
+
+[node name="Telefoon" type="Node3D" parent="Time Line/World/Objects/Interactable"]
+
+[node name="Non-interactable" type="Node3D" parent="Time Line/World/Objects"]
+
+[node name="Entity" type="Node3D" parent="."]
+
+[node name="NPC" type="Node3D" parent="Entity"]
+
+[node name="Friendly" type="Node3D" parent="Entity/NPC"]
+
+[node name="Companion" type="Node3D" parent="Entity/NPC/Friendly"]
+
+[node name="World character" type="Node3D" parent="Entity/NPC/Friendly"]
+
+[node name="Hostile" type="Node3D" parent="Entity/NPC"]
+
+[node name="Nexulith" type="Node3D" parent="Entity/NPC/Hostile"]
+
+[node name="Player" type="Node3D" parent="Entity"]
+
+[node name="Playable" type="Node3D" parent="Entity/Player"]
+
+[node name="Main character" type="Node3D" parent="Entity/Player/Playable"]
