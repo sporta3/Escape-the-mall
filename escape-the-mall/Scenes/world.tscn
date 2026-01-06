@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bvqb0nwxj6vdl"]
+
+[node name="World" type="Node3D"]
+
+[node name="Objects" type="Node3D" parent="."]
+
+[node name="Interactable" type="Node3D" parent="Objects"]
+
+[node name="Telefoon" type="Node3D" parent="Objects/Interactable"]
+
+[node name="Non-interactable" type="Node3D" parent="Objects"]
