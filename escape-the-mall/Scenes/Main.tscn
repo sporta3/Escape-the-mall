@@ -1,6 +1,29 @@
-[gd_scene format=3 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=6 format=3 uid="uid://c1eyumc3h1lbi"]
+
+[ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
+[ext_resource type="PackedScene" uid="uid://bgvssattc00nk" path="res://Scenes/TestPlayer.tscn" id="2_kln2b"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
+sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+
+[sub_resource type="Sky" id="Sky_kln2b"]
+sky_material = SubResource("ProceduralSkyMaterial_idj7w")
+
+[sub_resource type="Environment" id="Environment_rgh2o"]
+background_mode = 2
+sky = SubResource("Sky_kln2b")
+tonemap_mode = 2
+glow_enabled = true
 
 [node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0.0622601, 0.402717, 0.913205, -0.496112, 0.806422, -0.321803, -3.48329, 3.7694, -1.15972)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rgh2o")
 
 [node name="Menu" type="Node3D" parent="."]
 
@@ -24,6 +47,8 @@
 
 [node name="Non-interactable" type="Node3D" parent="Time Line/World/Objects"]
 
+[node name="Mall_V2" parent="Time Line/World" instance=ExtResource("1_idj7w")]
+
 [node name="Entity" type="Node3D" parent="."]
 
 [node name="NPC" type="Node3D" parent="Entity"]
@@ -43,3 +68,6 @@
 [node name="Playable" type="Node3D" parent="Entity/Player"]
 
 [node name="Main character" type="Node3D" parent="Entity/Player/Playable"]
+
+[node name="player" parent="Entity/Player/Playable/Main character" instance=ExtResource("2_kln2b")]
+transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 15.402, -1.31423)
