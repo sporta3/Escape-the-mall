@@ -70,4 +70,4 @@ environment = SubResource("Environment_rgh2o")
 [node name="Main character" type="Node3D" parent="Entity/Player/Playable"]
 
 [node name="player" parent="Entity/Player/Playable/Main character" instance=ExtResource("2_kln2b")]
-transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 15.402, -1.31423)
+transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 0.1777, -0.337068)
