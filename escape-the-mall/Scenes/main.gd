@@ -3,10 +3,19 @@ extends Node3D
 @onready var startMenu := $Menu/"Start menu"/CanvasLayer/Control
 @onready var pauzeMenu := $Menu/"Start menu"/CanvasLayer/Control
 @onready var endMenu := $Menu/"Start menu"/CanvasLayer/Control
+@onready var nexulith := $Entity/NPC/Hostile/Nexulith
+@onready var map := $"Time Line/World/Mall_V2"
+
 var GameStarted = false
 var alive = true
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	await get_tree().process_frame
+	var patrol_holder := map.get_node("PatrolPoints") as Node3D
+	if patrol_holder == null:
+		push_error("PatrolPoints niet gevonden in Mall_V2")
+		return
+	nexulith.set_patrol_points(patrol_holder)
 	toggle_pause()
 
 

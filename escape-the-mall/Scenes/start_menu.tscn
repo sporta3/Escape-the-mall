@@ -25,6 +25,7 @@ offset_bottom = 259.2
 text = "Start"
 
 [node name="options" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
 offset_left = 504.0
 offset_top = 265.2
 offset_right = 648.0
@@ -32,6 +33,7 @@ offset_bottom = 330.0
 text = "Options"
 
 [node name="quit" type="Button" parent="CanvasLayer/Control"]
+layout_mode = 0
 offset_left = 504.0
 offset_top = 336.0
 offset_right = 648.0
