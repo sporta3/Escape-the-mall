@@ -18,15 +18,15 @@ var sens_vertical := 0.5
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseMotion:
-		rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
-		camera_mount.rotate_x(deg_to_rad(-event.relative.y * sens_vertical))
-		camera_mount.rotation.x = clamp(
-			camera_mount.rotation.x,
-			deg_to_rad(-89),
-			deg_to_rad(89)
-		)
+#func _input(event: InputEvent) -> void:
+	#if event is InputEventMouseMotion:
+		#rotate_y(deg_to_rad(-event.relative.x * sens_horizontal))
+		#camera_mount.rotate_x(deg_to_rad(-event.relative.y * sens_vertical))
+		#camera_mount.rotation.x = clamp(
+			#camera_mount.rotation.x,
+			#deg_to_rad(-89),
+			#deg_to_rad(89)
+		#)
 
 func _physics_process(delta: float) -> void:
 
@@ -60,7 +60,7 @@ func _physics_process(delta: float) -> void:
 	)
 
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-
+	#direction = direction.rotated(Vector3.UP, camera.global_rotation.y)
 	if direction:
 		velocity.x = move_toward(velocity.x, direction.x * target_speed, ACCELERATION)
 		velocity.z = move_toward(velocity.z, direction.z * target_speed, ACCELERATION)
