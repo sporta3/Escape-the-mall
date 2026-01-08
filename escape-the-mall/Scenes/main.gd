@@ -1,5 +1,5 @@
 extends Node3D
-
+var niks = 0
 @onready var startMenu := $Menu/"Start menu"/CanvasLayer/Control
 @onready var pauzeMenu := $Menu/"Start menu"/CanvasLayer/Control
 @onready var endMenu := $Menu/"Start menu"/CanvasLayer/Control
