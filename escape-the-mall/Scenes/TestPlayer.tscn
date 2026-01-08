@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bgvssattc00nk"]
 
 [ext_resource type="Script" uid="uid://bv6xpogtmtyrn" path="res://Scripts/test_player.gd" id="1_dll2g"]
-[ext_resource type="Script" uid="uid://bgibobu3j6lwl" path="res://Scripts/spring_arm_3d.gd" id="2_c3wst"]
+[ext_resource type="Script" path="res://Scripts/spring_arm_3d.gd" id="2_c3wst"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_4t0sw"]
 
