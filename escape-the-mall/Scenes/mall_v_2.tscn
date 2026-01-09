@@ -1,4 +1,4 @@
-[gd_scene load_steps=179 format=3 uid="uid://dowfypc47gl4c"]
+[gd_scene load_steps=180 format=3 uid="uid://dowfypc47gl4c"]
 
 [ext_resource type="PackedScene" uid="uid://bi0kux1c5bl88" path="res://Blender/Mall_V2.glb" id="1_s221n"]
 
@@ -533,614 +533,423 @@ points = PackedVector3Array(-1.03021, -0.77891, -1.01761, 1.0121, 0.524195, -0.9
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fhcp0"]
 points = PackedVector3Array(1.01587, 0.015873, 1.01587, -1.01587, -0.015873, -1.01587, -1.01587, 0.015873, -1.01587, 1.01587, -0.015873, -1.01587, -1.01587, -0.015873, 1.01587, -1.01587, 0.015873, 1.01587, 1.01587, 0.015873, -1.01587, 1.01587, -0.015873, 1.01587)
 
+[sub_resource type="NavigationMesh" id="NavigationMesh_s221n"]
+vertices = PackedVector3Array(-49.3526, 12.3104, -13.3443, -49.3526, 12.3104, -47.8443, -72.6026, 12.3104, -47.8443, -72.6026, 12.3104, -13.0943, -64.8526, 0.310388, -36.5943, -64.6026, 0.310388, -47.3443, -72.1026, 0.310388, -47.3443, -72.1026, 0.310388, -36.5943, -64.8526, 6.31039, -36.5943, -64.6026, 6.31039, -47.3443, -72.1026, 6.31039, -47.3443, -72.1026, 6.31039, -36.5943, -63.3526, 0.310388, -36.5943, -63.1026, 0.310388, -35.8443, -58.8526, 0.310388, -35.8443, -58.6026, 0.310388, -36.5943, -57.3526, 0.310388, -47.3443, -57.1026, 0.310388, -36.5943, -63.3526, 6.31039, -35.3443, -64.6026, 6.31039, -35.3443, -64.1026, 6.31039, -33.0943, -57.8526, 6.31039, -33.0943, -57.3526, 6.31039, -35.3443, -58.6026, 6.31039, -35.3443, -63.1026, 6.31039, -36.3443, -58.8526, 6.31039, -36.3443, -57.1026, 6.31039, -36.5943, -57.3526, 6.31039, -47.3443, -50.1026, 0.310388, -36.5943, -50.1026, 0.310388, -47.3443, -50.1026, 6.31039, -36.5943, -50.1026, 6.31039, -47.3443, -58.6026, 0.310388, -35.3443, -63.3526, 0.310388, -35.3443, -72.1026, 0.310388, -3.84429, -50.3526, 0.310388, -4.09429, -72.1026, 0.310388, -35.3443, -50.1026, 0.310388, -35.3443, -65.6026, 6.31039, -32.5943, -72.1026, 6.31039, -35.3443, -72.1026, 6.31039, -13.5943, -65.6026, 6.31039, -13.5943, -56.3526, 6.31039, -32.8443, -50.1026, 6.31039, -35.3443, -56.3526, 6.31039, -11.8443, -50.3526, 6.31039, -11.8443, -65.6026, 6.31039, -7.34429, -63.6026, 6.31039, -7.59429, -63.6026, 6.31039, -11.3443, -65.6026, 6.31039, -11.5943, -72.1026, 6.31039, -5.34429, -65.6026, 6.31039, -5.34429, -72.6026, 12.3104, -2.59429, -76.3526, 12.3104, -2.34429, -76.3526, 12.0604, 1.65571, -72.6026, 12.3104, 1.90571, -72.6026, 12.3104, 12.9057, -49.3526, 12.3104, 13.1557, -49.1026, 12.3104, 11.4057, -47.1026, 12.3104, 11.4057, -47.1026, 12.0604, -11.5943, -49.1026, 12.0604, -11.5943, -56.6026, 6.31039, -11.3443, -56.6026, 6.31039, -7.59429, -56.3526, 6.31039, -4.84429, -50.3526, 6.31039, -4.84429, -13.3526, 12.3104, 2.15571, -11.3526, 12.3104, 1.90571, -11.3526, 12.3104, -2.34429, -13.3526, 12.3104, -2.59429, -13.3526, 12.3104, -11.5943, -13.3526, 12.3104, 11.4057, -45.6026, 0.310388, -2.84429, -44.8526, 0.310388, -2.84429, -44.6026, 0.310388, -3.34429, -45.8526, 0.310388, -3.59429, -49.1026, 0.310388, -11.3443, -49.1026, 0.310388, -3.59429, -41.6026, 0.310388, -3.34429, -41.6026, 0.310388, -11.3443, -45.6026, 6.31039, -2.84429, -44.8526, 6.31039, -2.84429, -44.6026, 6.31039, -3.34429, -45.8526, 6.31039, -3.59429, -49.1026, 6.31039, -11.3443, -49.1026, 6.31039, -3.59429, -41.6026, 6.31039, -3.34429, -41.6026, 6.31039, -11.3443, -37.1026, 0.310388, -2.59429, -36.1026, 0.310388, -2.59429, -35.8526, 0.310388, -3.34429, -37.3526, 0.310388, -3.34429, -32.6026, 0.310388, -11.3443, -40.3526, 0.310388, -11.3443, -40.3526, 0.310388, -3.34429, -32.6026, 0.310388, -3.34429, -37.1026, 6.31039, -2.59429, -36.1026, 6.31039, -2.59429, -35.8526, 6.31039, -3.34429, -37.3526, 6.31039, -3.34429, -32.6026, 6.31039, -11.3443, -40.3526, 6.31039, -11.3443, -40.3526, 6.31039, -3.34429, -32.6026, 6.31039, -3.34429, -28.1026, 0.310388, -2.84429, -27.1026, 0.310388, -2.59429, -26.8526, 0.310388, -3.34429, -28.3526, 0.310388, -3.34429, -24.1026, 0.310388, -11.3443, -31.3526, 0.310388, -11.3443, -24.1026, 0.310388, -3.34429, -31.3526, 0.310388, -3.34429, -28.1026, 6.31039, -2.84429, -27.1026, 6.31039, -2.59429, -26.8526, 6.31039, -3.34429, -28.3526, 6.31039, -3.34429, -24.1026, 6.31039, -11.3443, -31.3526, 6.31039, -11.3443, -24.1026, 6.31039, -3.34429, -31.3526, 6.31039, -3.34429, -18.8526, 0.310388, -2.59429, -17.8526, 0.310388, -2.59429, -17.6026, 0.310388, -3.34429, -19.1026, 0.310388, -3.34429, -13.8526, 0.310388, -11.3443, -22.8526, 0.310388, -11.3443, -13.8526, 0.310388, -3.34429, -22.8526, 0.310388, -3.34429, -18.8526, 6.31039, -2.59429, -17.8526, 6.31039, -2.59429, -17.6026, 6.31039, -3.34429, -19.1026, 6.31039, -3.34429, -13.8526, 6.31039, -11.3443, -22.8526, 6.31039, -11.3443, -13.8526, 6.31039, -3.34429, -22.8526, 6.31039, -3.34429, -72.3526, 6.31039, -1.84429, -76.1026, 6.31039, -1.84429, -76.1026, 6.31039, 1.40571, -72.3526, 6.31039, 1.40571, -72.1026, 6.31039, 3.65571, -65.6026, 6.31039, 3.65571, -50.3526, 6.31039, -2.34429, -56.3526, 6.31039, 5.90571, -50.1026, 6.31039, 6.15571, -50.1026, 6.31039, 1.90571, -72.3526, 0.310388, -1.84429, -76.1026, 0.310388, -1.84429, -76.1026, 0.310388, 1.40571, -72.3526, 0.310388, 1.40571, -50.3526, 0.310388, -2.34429, -50.1026, 0.310388, 3.65571, -50.1026, 0.310388, 1.90571, -72.1026, 0.310388, 3.65571, -45.6026, 0.310388, 1.65571, -45.3526, 0.310388, 2.40571, -44.8526, 0.310388, 2.40571, -44.6026, 0.310388, 1.65571, -42.6026, 0.310388, 1.65571, -42.6026, 0.310388, -1.84429, -44.6026, 0.310388, -1.84429, -45.8526, 0.310388, -2.34429, -49.8526, 0.310388, 1.40571, -45.6026, 6.31039, 1.65571, -45.3526, 6.31039, 2.40571, -44.8526, 6.31039, 2.40571, -44.6026, 6.31039, 1.65571, -42.6026, 6.31039, 1.65571, -42.6026, 6.31039, -1.84429, -44.6026, 6.31039, -1.84429, -45.8526, 6.31039, -2.34429, -49.8526, 6.31039, 1.40571, -28.3526, 0.310388, -2.09429, -28.3526, 0.310388, 1.65571, -28.1026, 0.310388, 2.40571, -27.1026, 0.310388, 2.40571, -26.8526, 0.310388, 1.65571, -26.8526, 0.310388, -1.84429, -33.8526, 0.310388, -1.84429, -33.8526, 0.310388, 1.65571, -24.8526, 0.310388, 1.65571, -24.8526, 0.310388, -1.84429, -28.3526, 6.31039, -2.09429, -28.3526, 6.31039, 1.65571, -28.1026, 6.31039, 2.40571, -27.1026, 6.31039, 2.40571, -26.8526, 6.31039, 1.65571, -26.8526, 6.31039, -1.84429, -33.8526, 6.31039, -1.84429, -33.8526, 6.31039, 1.65571, -24.8526, 6.31039, 1.65571, -24.8526, 6.31039, -1.84429, -37.3526, 0.310388, 1.65571, -37.1026, 0.310388, 2.40571, -36.1026, 0.310388, 2.40571, -35.8526, 0.310388, -1.84429, -37.3526, 0.310388, -1.84429, -35.8526, 0.310388, 1.65571, -37.3526, 6.31039, 1.65571, -37.1026, 6.31039, 2.40571, -36.1026, 6.31039, 2.40571, -35.8526, 6.31039, -1.84429, -37.3526, 6.31039, -1.84429, -35.8526, 6.31039, 1.65571, -19.1026, 0.310388, 1.65571, -18.8526, 0.310388, 2.40571, -17.8526, 0.310388, 2.40571, -17.6026, 0.310388, -1.84429, -19.1026, 0.310388, -1.84429, -17.6026, 0.310388, 1.65571, -15.6026, 0.310388, 1.65571, -15.6026, 0.310388, -1.84429, -19.1026, 6.31039, 1.65571, -18.8526, 6.31039, 2.40571, -17.8526, 6.31039, 2.40571, -17.6026, 6.31039, -1.84429, -19.1026, 6.31039, -1.84429, -17.6026, 6.31039, 1.65571, -15.6026, 6.31039, 1.65571, -15.6026, 6.31039, -1.84429, 0.6474, 12.3104, 1.90571, 0.6474, 12.3104, -2.34429, 0.1474, 0.310388, 1.40571, 0.1474, 0.310388, -1.84429, 0.1474, 6.31039, 1.40571, 0.1474, 6.31039, -1.84429, -45.6026, 0.310388, 2.90571, -48.8526, 0.310388, 10.9057, -41.6026, 0.310388, 10.9057, -44.6026, 0.310388, 2.90571, -48.8526, 0.310388, 2.90571, -41.6026, 0.310388, 2.90571, -45.6026, 6.31039, 2.90571, -48.8526, 6.31039, 10.9057, -41.6026, 6.31039, 10.9057, -44.6026, 6.31039, 2.90571, -48.8526, 6.31039, 2.90571, -41.6026, 6.31039, 2.90571, -37.3526, 0.310388, 2.90571, -40.3526, 0.310388, 10.9057, -32.6026, 0.310388, 10.9057, -35.8526, 0.310388, 2.90571, -32.6026, 0.310388, 2.90571, -40.3526, 0.310388, 2.90571, -37.3526, 6.31039, 2.90571, -40.3526, 6.31039, 10.9057, -32.6026, 6.31039, 10.9057, -35.8526, 6.31039, 2.90571, -32.6026, 6.31039, 2.90571, -40.3526, 6.31039, 2.90571, -28.3526, 0.310388, 2.90571, -31.3526, 0.310388, 10.9057, -24.1026, 0.310388, 10.9057, -26.8526, 0.310388, 2.90571, -31.3526, 0.310388, 2.90571, -24.1026, 0.310388, 2.90571, -28.3526, 6.31039, 2.90571, -31.3526, 6.31039, 10.9057, -24.1026, 6.31039, 10.9057, -26.8526, 6.31039, 2.90571, -31.3526, 6.31039, 2.90571, -24.1026, 6.31039, 2.90571, -19.1026, 0.310388, 2.90571, -22.8526, 0.310388, 10.9057, -13.8526, 0.310388, 10.9057, -17.6026, 0.310388, 2.90571, -13.8526, 0.310388, 2.90571, -22.8526, 0.310388, 2.90571, -19.1026, 6.31039, 2.90571, -22.8526, 6.31039, 10.9057, -13.8526, 6.31039, 10.9057, -17.6026, 6.31039, 2.90571, -13.8526, 6.31039, 2.90571, -22.8526, 6.31039, 2.90571, -63.1026, 0.310388, 34.9057, -58.8526, 0.310388, 34.9057, -58.6026, 0.310388, 34.4057, -63.3526, 0.310388, 34.4057, -72.1026, 0.310388, 34.4057, -50.1026, 0.310388, 34.4057, -63.8526, 6.31039, 11.1557, -63.3526, 6.31039, 7.65571, -65.1026, 6.31039, 7.65571, -65.6026, 6.31039, 11.1557, -65.6026, 6.31039, 7.15571, -72.1026, 6.31039, 13.1557, -65.6026, 6.31039, 13.1557, -56.3526, 6.31039, 11.4057, -56.6026, 6.31039, 12.6557, -50.1026, 6.31039, 12.6557, -56.6026, 6.31039, 7.65571, -56.8526, 6.31039, 10.9057, -56.3526, 6.31039, 31.9057, -57.8526, 6.31039, 32.1557, -57.3526, 6.31039, 34.4057, -50.1026, 6.31039, 34.4057, -72.6026, 12.3104, 47.4057, -49.3526, 12.3104, 47.4057, -64.6026, 6.31039, 34.4057, -64.1026, 6.31039, 32.1557, -65.6026, 6.31039, 31.6557, -72.1026, 6.31039, 34.4057, 14.8974, 1.81039, 29.1557, 14.8974, 1.81039, 30.4057, 18.1474, 2.06039, 30.4057, 18.1474, 2.06039, 29.1557, 15.3974, 0.060388, 29.1557, 15.3974, 0.060388, 30.4057, 17.8974, 0.060388, 30.4057, 17.8974, 0.060388, 29.1557, -58.6026, 6.31039, 34.4057, -63.3526, 6.31039, 34.4057, -56.6026, 6.31039, 35.6557, -58.8526, 6.31039, 35.4057, -63.1026, 6.31039, 35.4057, -65.3526, 6.31039, 35.6557, -65.3526, 6.31039, 46.6557, -56.6026, 6.31039, 46.6557, -58.6026, 0.310388, 35.6557, -63.3526, 0.310388, 35.6557, -65.3526, 0.310388, 46.6557, -56.6026, 0.310388, 46.6557, -65.3526, 0.310388, 35.6557, -56.6026, 0.310388, 35.6557, -72.1026, 0.310388, 35.6557, -72.1026, 0.310388, 46.6557, -72.1026, 6.31039, 35.6557, -72.1026, 6.31039, 46.6557, -50.1026, 0.310388, 46.6557, -50.1026, 0.310388, 35.6557, -50.1026, 6.31039, 46.6557, -50.1026, 6.31039, 35.6557)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(7, 6, 4), PackedInt32Array(4, 6, 5), PackedInt32Array(11, 10, 8), PackedInt32Array(8, 10, 9), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 15), PackedInt32Array(15, 12, 5), PackedInt32Array(15, 5, 16), PackedInt32Array(12, 4, 5), PackedInt32Array(16, 17, 15), PackedInt32Array(20, 19, 18), PackedInt32Array(23, 22, 21), PackedInt32Array(23, 21, 18), PackedInt32Array(18, 21, 20), PackedInt32Array(24, 8, 25), PackedInt32Array(25, 8, 26), PackedInt32Array(26, 8, 9), PackedInt32Array(26, 9, 27), PackedInt32Array(25, 23, 24), PackedInt32Array(24, 23, 18), PackedInt32Array(28, 17, 29), PackedInt32Array(29, 17, 16), PackedInt32Array(30, 26, 31), PackedInt32Array(31, 26, 27), PackedInt32Array(14, 32, 13), PackedInt32Array(13, 32, 33), PackedInt32Array(33, 32, 35), PackedInt32Array(33, 35, 34), PackedInt32Array(34, 36, 33), PackedInt32Array(32, 37, 35), PackedInt32Array(20, 38, 19), PackedInt32Array(19, 38, 39), PackedInt32Array(41, 40, 38), PackedInt32Array(38, 40, 39), PackedInt32Array(21, 22, 42), PackedInt32Array(42, 22, 43), PackedInt32Array(44, 42, 45), PackedInt32Array(45, 42, 43), PackedInt32Array(47, 46, 48), PackedInt32Array(48, 46, 49), PackedInt32Array(49, 46, 40), PackedInt32Array(40, 46, 50), PackedInt32Array(46, 51, 50), PackedInt32Array(40, 41, 49), PackedInt32Array(53, 52, 54), PackedInt32Array(54, 52, 55), PackedInt32Array(57, 56, 58), PackedInt32Array(58, 56, 55), PackedInt32Array(59, 58, 60), PackedInt32Array(60, 58, 61), PackedInt32Array(61, 58, 55), PackedInt32Array(61, 55, 52), PackedInt32Array(0, 61, 3), PackedInt32Array(3, 61, 52), PackedInt32Array(62, 44, 63), PackedInt32Array(63, 44, 64), PackedInt32Array(64, 44, 45), PackedInt32Array(64, 45, 65), PackedInt32Array(62, 63, 48), PackedInt32Array(48, 63, 47), PackedInt32Array(67, 66, 68), PackedInt32Array(68, 66, 69), PackedInt32Array(69, 66, 60), PackedInt32Array(60, 66, 59), PackedInt32Array(60, 70, 69), PackedInt32Array(66, 71, 59), PackedInt32Array(73, 72, 74), PackedInt32Array(74, 72, 75), PackedInt32Array(75, 77, 76), PackedInt32Array(74, 75, 78), PackedInt32Array(78, 75, 79), PackedInt32Array(79, 75, 76), PackedInt32Array(81, 80, 82), PackedInt32Array(82, 80, 83), PackedInt32Array(83, 85, 84), PackedInt32Array(82, 83, 86), PackedInt32Array(86, 83, 87), PackedInt32Array(87, 83, 84), PackedInt32Array(88, 91, 89), PackedInt32Array(89, 91, 90), PackedInt32Array(91, 93, 90), PackedInt32Array(90, 93, 92), PackedInt32Array(91, 94, 93), PackedInt32Array(92, 95, 90), PackedInt32Array(96, 99, 97), PackedInt32Array(97, 99, 98), PackedInt32Array(99, 101, 98), PackedInt32Array(98, 101, 100), PackedInt32Array(99, 102, 101), PackedInt32Array(100, 103, 98), PackedInt32Array(106, 105, 104), PackedInt32Array(104, 107, 106), PackedInt32Array(106, 107, 108), PackedInt32Array(108, 107, 109), PackedInt32Array(108, 110, 106), PackedInt32Array(107, 111, 109), PackedInt32Array(114, 113, 112), PackedInt32Array(112, 115, 114), PackedInt32Array(114, 115, 116), PackedInt32Array(116, 115, 117), PackedInt32Array(116, 118, 114), PackedInt32Array(115, 119, 117), PackedInt32Array(120, 123, 121), PackedInt32Array(121, 123, 122), PackedInt32Array(123, 125, 122), PackedInt32Array(122, 125, 124), PackedInt32Array(124, 126, 122), PackedInt32Array(123, 127, 125), PackedInt32Array(128, 131, 129), PackedInt32Array(129, 131, 130), PackedInt32Array(131, 133, 130), PackedInt32Array(130, 133, 132), PackedInt32Array(132, 134, 130), PackedInt32Array(131, 135, 133), PackedInt32Array(139, 138, 136), PackedInt32Array(136, 138, 137), PackedInt32Array(139, 136, 140), PackedInt32Array(140, 136, 50), PackedInt32Array(140, 50, 51), PackedInt32Array(140, 51, 141), PackedInt32Array(64, 65, 142), PackedInt32Array(145, 144, 142), PackedInt32Array(142, 144, 143), PackedInt32Array(142, 143, 64), PackedInt32Array(149, 148, 146), PackedInt32Array(146, 148, 147), PackedInt32Array(34, 35, 150), PackedInt32Array(149, 146, 34), PackedInt32Array(152, 151, 150), PackedInt32Array(150, 151, 153), PackedInt32Array(150, 153, 149), PackedInt32Array(150, 149, 34), PackedInt32Array(155, 154, 156), PackedInt32Array(156, 154, 157), PackedInt32Array(160, 159, 157), PackedInt32Array(157, 159, 158), PackedInt32Array(72, 73, 161), PackedInt32Array(161, 73, 160), PackedInt32Array(157, 154, 160), PackedInt32Array(160, 154, 161), PackedInt32Array(161, 154, 162), PackedInt32Array(161, 162, 150), PackedInt32Array(162, 152, 150), PackedInt32Array(164, 163, 165), PackedInt32Array(165, 163, 166), PackedInt32Array(169, 168, 166), PackedInt32Array(166, 168, 167), PackedInt32Array(80, 81, 170), PackedInt32Array(170, 81, 169), PackedInt32Array(166, 163, 169), PackedInt32Array(169, 163, 170), PackedInt32Array(170, 163, 171), PackedInt32Array(170, 171, 142), PackedInt32Array(171, 145, 142), PackedInt32Array(172, 104, 105), PackedInt32Array(175, 174, 173), PackedInt32Array(105, 177, 172), PackedInt32Array(172, 177, 176), PackedInt32Array(172, 176, 173), PackedInt32Array(173, 176, 175), PackedInt32Array(179, 178, 173), PackedInt32Array(173, 178, 172), PackedInt32Array(177, 181, 176), PackedInt32Array(176, 181, 180), PackedInt32Array(182, 112, 113), PackedInt32Array(185, 184, 183), PackedInt32Array(113, 187, 182), PackedInt32Array(182, 187, 186), PackedInt32Array(182, 186, 183), PackedInt32Array(183, 186, 185), PackedInt32Array(189, 188, 183), PackedInt32Array(183, 188, 182), PackedInt32Array(187, 191, 186), PackedInt32Array(186, 191, 190), PackedInt32Array(194, 193, 192), PackedInt32Array(88, 89, 195), PackedInt32Array(88, 195, 196), PackedInt32Array(196, 195, 197), PackedInt32Array(196, 197, 192), PackedInt32Array(192, 197, 194), PackedInt32Array(196, 192, 159), PackedInt32Array(159, 192, 158), PackedInt32Array(195, 178, 197), PackedInt32Array(197, 178, 179), PackedInt32Array(200, 199, 198), PackedInt32Array(96, 97, 201), PackedInt32Array(96, 201, 202), PackedInt32Array(202, 201, 203), PackedInt32Array(202, 203, 198), PackedInt32Array(198, 203, 200), PackedInt32Array(202, 198, 168), PackedInt32Array(168, 198, 167), PackedInt32Array(201, 188, 203), PackedInt32Array(203, 188, 189), PackedInt32Array(206, 205, 204), PackedInt32Array(120, 121, 207), PackedInt32Array(120, 207, 208), PackedInt32Array(208, 207, 209), PackedInt32Array(208, 209, 204), PackedInt32Array(204, 209, 206), PackedInt32Array(208, 204, 181), PackedInt32Array(181, 204, 180), PackedInt32Array(207, 211, 209), PackedInt32Array(209, 211, 210), PackedInt32Array(214, 213, 212), PackedInt32Array(128, 129, 215), PackedInt32Array(128, 215, 216), PackedInt32Array(216, 215, 217), PackedInt32Array(216, 217, 212), PackedInt32Array(212, 217, 214), PackedInt32Array(216, 212, 191), PackedInt32Array(191, 212, 190), PackedInt32Array(215, 219, 217), PackedInt32Array(217, 219, 218), PackedInt32Array(68, 221, 67), PackedInt32Array(67, 221, 220), PackedInt32Array(223, 222, 211), PackedInt32Array(211, 222, 210), PackedInt32Array(225, 224, 219), PackedInt32Array(219, 224, 218), PackedInt32Array(156, 229, 155), PackedInt32Array(155, 229, 226), PackedInt32Array(226, 229, 228), PackedInt32Array(226, 228, 227), PackedInt32Array(227, 230, 226), PackedInt32Array(229, 231, 228), PackedInt32Array(165, 235, 164), PackedInt32Array(164, 235, 232), PackedInt32Array(232, 235, 234), PackedInt32Array(232, 234, 233), PackedInt32Array(233, 236, 232), PackedInt32Array(235, 237, 234), PackedInt32Array(194, 241, 193), PackedInt32Array(193, 241, 238), PackedInt32Array(238, 241, 239), PackedInt32Array(239, 241, 240), PackedInt32Array(241, 242, 240), PackedInt32Array(239, 243, 238), PackedInt32Array(200, 247, 199), PackedInt32Array(199, 247, 244), PackedInt32Array(244, 247, 245), PackedInt32Array(245, 247, 246), PackedInt32Array(247, 248, 246), PackedInt32Array(245, 249, 244), PackedInt32Array(175, 253, 174), PackedInt32Array(174, 253, 250), PackedInt32Array(250, 253, 252), PackedInt32Array(250, 252, 251), PackedInt32Array(251, 254, 250), PackedInt32Array(253, 255, 252), PackedInt32Array(185, 259, 184), PackedInt32Array(184, 259, 256), PackedInt32Array(256, 259, 258), PackedInt32Array(256, 258, 257), PackedInt32Array(257, 260, 256), PackedInt32Array(259, 261, 258), PackedInt32Array(206, 265, 205), PackedInt32Array(205, 265, 262), PackedInt32Array(262, 265, 264), PackedInt32Array(262, 264, 263), PackedInt32Array(265, 266, 264), PackedInt32Array(263, 267, 262), PackedInt32Array(214, 271, 213), PackedInt32Array(213, 271, 268), PackedInt32Array(268, 271, 270), PackedInt32Array(268, 270, 269), PackedInt32Array(271, 272, 270), PackedInt32Array(269, 273, 268), PackedInt32Array(274, 277, 275), PackedInt32Array(275, 277, 276), PackedInt32Array(276, 277, 151), PackedInt32Array(151, 277, 153), PackedInt32Array(277, 278, 153), PackedInt32Array(151, 279, 276), PackedInt32Array(283, 282, 280), PackedInt32Array(280, 282, 281), PackedInt32Array(140, 141, 284), PackedInt32Array(282, 283, 284), PackedInt32Array(284, 283, 285), PackedInt32Array(284, 285, 140), PackedInt32Array(283, 286, 285), PackedInt32Array(289, 288, 287), PackedInt32Array(291, 290, 287), PackedInt32Array(287, 290, 143), PackedInt32Array(287, 143, 144), PackedInt32Array(287, 144, 289), PackedInt32Array(290, 291, 281), PackedInt32Array(281, 291, 280), PackedInt32Array(293, 292, 294), PackedInt32Array(294, 292, 295), PackedInt32Array(288, 289, 292), PackedInt32Array(292, 289, 295), PackedInt32Array(297, 296, 57), PackedInt32Array(57, 296, 56), PackedInt32Array(299, 298, 300), PackedInt32Array(300, 298, 301), PackedInt32Array(286, 300, 285), PackedInt32Array(285, 300, 301), PackedInt32Array(305, 304, 302), PackedInt32Array(302, 304, 303), PackedInt32Array(309, 308, 306), PackedInt32Array(306, 308, 307), PackedInt32Array(293, 294, 310), PackedInt32Array(311, 298, 299), PackedInt32Array(311, 299, 310), PackedInt32Array(310, 299, 293), PackedInt32Array(313, 312, 314), PackedInt32Array(314, 312, 315), PackedInt32Array(315, 312, 317), PackedInt32Array(315, 317, 316), PackedInt32Array(314, 311, 313), PackedInt32Array(313, 311, 310), PackedInt32Array(275, 318, 274), PackedInt32Array(274, 318, 319), PackedInt32Array(319, 318, 321), PackedInt32Array(319, 321, 320), PackedInt32Array(320, 322, 319), PackedInt32Array(318, 323, 321), PackedInt32Array(325, 324, 320), PackedInt32Array(320, 324, 322), PackedInt32Array(327, 326, 316), PackedInt32Array(316, 326, 315), PackedInt32Array(323, 329, 321), PackedInt32Array(321, 329, 328), PackedInt32Array(312, 331, 317), PackedInt32Array(317, 331, 330)]
+geometry_source_geometry_mode = 1
+geometry_source_group_name = &"nav_geo"
+
 [node name="Mall_V2" instance=ExtResource("1_s221n")]
 
 [node name="Plane_007" parent="." index="0"]
 transform = Transform3D(-2.94398e-06, 0, 3.95, 0, 1, 0, -18.07, 0, -6.43537e-07, -68.8155, 5.89767, -29.9672)
-metadata/_edit_lock_ = true
 
 [node name="Plane_008" parent="." index="1"]
 transform = Transform3D(-2.94398e-06, 0, 3.95, 0, 1, 0, -18.07, 0, -6.43537e-07, -68.8155, 5.89767, 29.6259)
-metadata/_edit_lock_ = true
 
 [node name="Plane_009" parent="." index="2"]
 transform = Transform3D(-2.94398e-06, 0, 3.95, 0, 1, 0, -18.07, 0, -6.43537e-07, -53.6043, 5.89767, 29.537)
-metadata/_edit_lock_ = true
 
 [node name="Plane_013" parent="." index="3"]
 transform = Transform3D(-5.17106e-07, 0, 3.99, 0, 1, 0, -11.83, 0, -1.74408e-07, -53.1415, 5.89767, -0.108416)
-metadata/_edit_lock_ = true
 
 [node name="Plane_019" parent="." index="4"]
 transform = Transform3D(-5.17106e-07, 0, 3.95, 0, 1, 0, -11.83, 0, -1.7266e-07, -68.7869, 5.89767, -0.108416)
-metadata/_edit_lock_ = true
-
-[node name="Plane_020" parent="." index="5"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_024" parent="." index="6"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_025" parent="." index="7"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_026" parent="." index="8"]
-metadata/_edit_lock_ = true
 
 [node name="Cube_058" parent="." index="9"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -6.04091e-07, 0, 4.37114e-08, 6.91, -56.9994, 6.3, -0.0795739)
-metadata/_edit_lock_ = true
 
 [node name="Cube_059" parent="." index="10"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -6.04091e-07, 0, 4.37114e-08, 6.91, -64.8266, 6.3, -0.0795739)
-metadata/_edit_lock_ = true
 
 [node name="Cube_060" parent="." index="11"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -8.92586e-07, 0, 4.37114e-08, 10.21, -64.8266, 6.3, -22.1148)
-metadata/_edit_lock_ = true
 
 [node name="Cube_061" parent="." index="12"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -8.92586e-07, 0, 4.37114e-08, 10.21, -57.4015, 6.3, -22.1148)
-metadata/_edit_lock_ = true
 
 [node name="Cube_062" parent="." index="13"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -8.61988e-07, 0, 4.37114e-08, 9.86, -57.4015, 6.3, 21.4915)
-metadata/_edit_lock_ = true
 
 [node name="Cube_063" parent="." index="14"]
 transform = Transform3D(-0.05, 0, 0, 0, 0.5, -8.61988e-07, 0, 4.37114e-08, 9.86, -64.8529, 6.3, 21.4915)
-metadata/_edit_lock_ = true
 
 [node name="Cube_064" parent="." index="15"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.8606, 6.3, 6.87793)
-metadata/_edit_lock_ = true
 
 [node name="Cube_065" parent="." index="16"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.8606, 6.3, -6.85273)
-metadata/_edit_lock_ = true
 
 [node name="Cube_066" parent="." index="17"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.8606, 6.3, -12.0156)
-metadata/_edit_lock_ = true
 
 [node name="Cube_067" parent="." index="18"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.8606, 6.3, 11.7365)
-metadata/_edit_lock_ = true
 
 [node name="Cube_068" parent="." index="19"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.8606, 6.3, 31.4219)
-metadata/_edit_lock_ = true
 
 [node name="Cube_069" parent="." index="20"]
 transform = Transform3D(-2.18557e-09, -1.91069e-15, 3.87, -4.37114e-09, 0.5, 0, 0.05, 4.37114e-08, 1.69163e-07, -60.9359, 6.33442, -32.3234)
-metadata/_edit_lock_ = true
 
 [node name="Cube_070" parent="." index="21"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.31, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.88396e-07, -54.0399, 8.89767, -36)
-metadata/_edit_lock_ = true
 
 [node name="Cube_071" parent="." index="22"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.52, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.97575e-07, -68.1334, 8.89767, -36)
-metadata/_edit_lock_ = true
 
 [node name="Cube_072" parent="." index="23"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.31, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.88396e-07, -54.0399, 8.89767, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_073" parent="." index="24"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.52, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.97575e-07, -68.1334, 8.89767, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_074" parent="." index="25"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -15.1996, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_075" parent="." index="26"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -21.4038, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_076" parent="." index="27"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -24.8184, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_077" parent="." index="28"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -30.3396, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_078" parent="." index="29"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -39.4085, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_079" parent="." index="30"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -33.837, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_080" parent="." index="31"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -47.7936, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_081" parent="." index="32"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -42.4802, 8.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_082" parent="." index="33"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -15.1996, 8.9, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_083" parent="." index="34"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -21.5701, 8.9, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_084" parent="." index="35"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -24.8184, 8.9, -2.56113)
-metadata/_edit_lock_ = true
 
 [node name="Cube_085" parent="." index="36"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -30.3396, 8.9, -2.6447)
-metadata/_edit_lock_ = true
 
 [node name="Cube_086" parent="." index="37"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -33.837, 8.9, -2.62205)
-metadata/_edit_lock_ = true
 
 [node name="Cube_087" parent="." index="38"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -39.4085, 8.9, -2.62395)
-metadata/_edit_lock_ = true
 
 [node name="Cube_088" parent="." index="39"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -42.4802, 8.9, -2.64232)
-metadata/_edit_lock_ = true
 
 [node name="Cube_089" parent="." index="40"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.87, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.17403e-08, -47.9806, 8.9, -2.89673)
-metadata/_edit_lock_ = true
 
 [node name="Cube_090" parent="." index="41"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -18.3685, 10.7824, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_091" parent="." index="42"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -27.5148, 10.7824, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_092" parent="." index="43"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -36.6043, 10.7824, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_093" parent="." index="44"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -45.4193, 10.7824, -2.82323)
-metadata/_edit_lock_ = true
 
 [node name="Cube_094" parent="." index="45"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -45.4193, 10.7824, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_095" parent="." index="46"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -36.7555, 10.7824, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_096" parent="." index="47"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -27.6099, 4.8, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_097" parent="." index="48"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -18.2897, 10.7824, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_098" parent="." index="49"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 2.87, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 1.25452e-07, -60.864, 10.8452, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_099" parent="." index="50"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 2.87, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 1.25452e-07, -60.864, 10.8452, -36.0035)
-metadata/_edit_lock_ = true
 
 [node name="Cube_100" parent="." index="51"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -15.1996, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_101" parent="." index="52"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -21.4038, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_102" parent="." index="53"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -18.2897, 4.8, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_103" parent="." index="54"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -24.8184, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_104" parent="." index="55"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -30.3396, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_105" parent="." index="56"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -33.837, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_106" parent="." index="57"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -39.4085, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_107" parent="." index="58"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -42.4802, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_108" parent="." index="59"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -47.7936, 2.9, 2.33184)
-metadata/_edit_lock_ = true
 
 [node name="Cube_109" parent="." index="60"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -27.6099, 10.7824, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_110" parent="." index="61"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -36.7555, 4.8, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_111" parent="." index="62"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -45.4193, 4.8, 2.37877)
-metadata/_edit_lock_ = true
 
 [node name="Cube_112" parent="." index="63"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -15.1996, 2.9, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_113" parent="." index="64"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -21.5701, 2.9, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_114" parent="." index="65"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -24.8184, 2.9, -2.56113)
-metadata/_edit_lock_ = true
 
 [node name="Cube_115" parent="." index="66"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -30.3396, 2.9, -2.6447)
-metadata/_edit_lock_ = true
 
 [node name="Cube_116" parent="." index="67"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -33.837, 2.9, -2.62205)
-metadata/_edit_lock_ = true
 
 [node name="Cube_117" parent="." index="68"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -39.4085, 2.9, -2.62395)
-metadata/_edit_lock_ = true
 
 [node name="Cube_118" parent="." index="69"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.7, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.43094e-08, -42.4802, 2.9, -2.64232)
-metadata/_edit_lock_ = true
 
 [node name="Cube_119" parent="." index="70"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 1.87, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.17403e-08, -47.9806, 2.9, -2.89673)
-metadata/_edit_lock_ = true
 
 [node name="Cube_120" parent="." index="71"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -18.3685, 4.8, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_121" parent="." index="72"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -27.5148, 4.8, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_122" parent="." index="73"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -36.6043, 4.8, -2.54818)
-metadata/_edit_lock_ = true
 
 [node name="Cube_123" parent="." index="74"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 1.3, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 5.68248e-08, -45.4193, 4.8, -2.82323)
-metadata/_edit_lock_ = true
 
 [node name="Cube_124" parent="." index="75"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.31, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.88396e-07, -54.0399, 2.9, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_125" parent="." index="76"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.52, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.97575e-07, -68.1334, 2.9, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_126" parent="." index="77"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 2.87, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 1.25452e-07, -60.864, 4.8, 35)
-metadata/_edit_lock_ = true
 
 [node name="Cube_127" parent="." index="78"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.52, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.97575e-07, -68.1334, 2.9, -36)
-metadata/_edit_lock_ = true
 
 [node name="Cube_128" parent="." index="79"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 4.31, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 1.88396e-07, -54.0399, 2.9, -36)
-metadata/_edit_lock_ = true
 
 [node name="Cube_129" parent="." index="80"]
 transform = Transform3D(-2.18557e-09, -4.20351e-15, 2.87, -4.37114e-09, 1.1, 0, 0.05, 9.61651e-08, 1.25452e-07, -60.864, 4.8, -36.0035)
-metadata/_edit_lock_ = true
-
-[node name="Cube" parent="." index="81"]
-metadata/_edit_lock_ = true
 
 [node name="Cube_001" parent="." index="82"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 6.97, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 3.04668e-07, -6.09306, 3, 2.07303)
-metadata/_edit_lock_ = true
-
-[node name="Plane" parent="." index="83"]
-metadata/_edit_lock_ = true
-
-[node name="Cube_002" parent="." index="84"]
-metadata/_edit_lock_ = true
-
-[node name="Cube_003" parent="." index="85"]
-metadata/_edit_lock_ = true
 
 [node name="Cube_004" parent="." index="86"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 6.97, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 3.04668e-07, -6.09306, 3, -2.63186)
-metadata/_edit_lock_ = true
 
 [node name="Cube_005" parent="." index="87"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.11761e-07, 0, 2.62268e-07, 4.71, -13.2202, 3, -7.36289)
-metadata/_edit_lock_ = true
 
 [node name="Cube_006" parent="." index="88"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.11761e-07, 0, 2.62268e-07, 4.71, -13.2202, 3, 6.77665)
-metadata/_edit_lock_ = true
 
 [node name="Cube_007" parent="." index="89"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 18.11, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.91613e-07, -31.4158, 3, 11.5285)
-metadata/_edit_lock_ = true
 
 [node name="Cube_008" parent="." index="90"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 18.11, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.91613e-07, -31.4158, 3, -11.897)
-metadata/_edit_lock_ = true
 
 [node name="Cube_009" parent="." index="91"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -49.5139, 3, -29.9255)
-metadata/_edit_lock_ = true
 
 [node name="Cube_010" parent="." index="92"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -49.5139, 3, 29.7052)
-metadata/_edit_lock_ = true
-
-[node name="Plane_001" parent="." index="93"]
-metadata/_edit_lock_ = true
 
 [node name="Plane_002" parent="." index="94"]
 transform = Transform3D(-7.90739e-07, 0, 11.81, 0, 1, 0, -18.09, 0, -5.16232e-07, -61.0101, 0, -29.9672)
-metadata/_edit_lock_ = true
 
 [node name="Plane_003" parent="." index="95"]
 transform = Transform3D(-7.86368e-07, 0, 11.74, 0, 1, 0, -17.99, 0, -5.13172e-07, -61.0101, 0, 29.4593)
-metadata/_edit_lock_ = true
 
 [node name="Cube_011" parent="." index="96"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -72.8, 3, -29.9255)
-metadata/_edit_lock_ = true
 
 [node name="Cube_012" parent="." index="97"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -72.8, 3, 29.7052)
-metadata/_edit_lock_ = true
 
 [node name="Cube_013" parent="." index="98"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -72.8, 3, 6.84785)
-metadata/_edit_lock_ = true
-
-[node name="Plane_004" parent="." index="99"]
-metadata/_edit_lock_ = true
 
 [node name="Cube_014" parent="." index="100"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 11.67, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 5.10112e-07, -61.1284, 3, -48.0576)
-metadata/_edit_lock_ = true
 
 [node name="Cube_015" parent="." index="101"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 11.67, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 5.10112e-07, -61.1284, 3, 47.4144)
-metadata/_edit_lock_ = true
 
 [node name="Cube_016" parent="." index="102"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -74.8036, 3, -2.63186)
-metadata/_edit_lock_ = true
 
 [node name="Cube_017" parent="." index="103"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -74.7987, 3, 2.07303)
-metadata/_edit_lock_ = true
 
 [node name="Cube_018" parent="." index="104"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -2.0894e-07, 0, 2.62268e-07, 2.39, -76.8026, 3, -0.285098)
-metadata/_edit_lock_ = true
 
 [node name="Cube_019" parent="." index="105"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -72.8, 3, -7.48375)
-metadata/_edit_lock_ = true
-
-[node name="Plane_010" parent="." index="106"]
-metadata/_edit_lock_ = true
-
-[node name="Cube_020" parent="." index="107"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_011" parent="." index="108"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_012" parent="." index="109"]
-metadata/_edit_lock_ = true
 
 [node name="Plane_014" parent="." index="110"]
 transform = Transform3D(-7.86368e-07, 0, 11.74, 0, 1, 0, -17.99, 0, -5.13172e-07, -61.0101, 11.6977, 29.4593)
-metadata/_edit_lock_ = true
 
 [node name="Plane_015" parent="." index="111"]
 transform = Transform3D(-7.90739e-07, 0, 11.81, 0, 1, 0, -18.09, 0, -5.16232e-07, -61.0101, 11.6977, -29.9672)
-metadata/_edit_lock_ = true
-
-[node name="Plane_016" parent="." index="112"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_017" parent="." index="113"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_018" parent="." index="114"]
-metadata/_edit_lock_ = true
 
 [node name="Plane_021" parent="." index="115"]
 transform = Transform3D(-2.94398e-06, 0, 3.95, 0, 1, 0, -18.07, 0, -6.43537e-07, -53.6043, 5.89767, -29.9672)
-metadata/_edit_lock_ = true
-
-[node name="Plane_022" parent="." index="116"]
-metadata/_edit_lock_ = true
-
-[node name="Plane_023" parent="." index="117"]
-metadata/_edit_lock_ = true
 
 [node name="Cube_022" parent="." index="118"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -72.8, 8.89767, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_023" parent="." index="119"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -2.0894e-07, 0, 2.62268e-07, 2.39, -76.8026, 8.89767, -0.285098)
-metadata/_edit_lock_ = true
 
 [node name="Cube_024" parent="." index="120"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -74.7987, 8.89767, 2.07303)
-metadata/_edit_lock_ = true
 
 [node name="Cube_025" parent="." index="121"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 2, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 8.74228e-08, -74.8036, 8.89767, -2.63186)
-metadata/_edit_lock_ = true
 
 [node name="Cube_026" parent="." index="122"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 11.67, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 5.10112e-07, -61.1284, 8.89767, 47.4144)
-metadata/_edit_lock_ = true
 
 [node name="Cube_027" parent="." index="123"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 11.67, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 5.10112e-07, -61.1284, 8.89767, -48.0576)
-metadata/_edit_lock_ = true
 
 [node name="Cube_028" parent="." index="124"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -72.8, 8.89767, 6.84785)
-metadata/_edit_lock_ = true
 
 [node name="Cube_029" parent="." index="125"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -72.8, 8.89767, 29.7052)
-metadata/_edit_lock_ = true
 
 [node name="Cube_030" parent="." index="126"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -72.8, 8.89767, -29.9255)
-metadata/_edit_lock_ = true
 
 [node name="Cube_031" parent="." index="127"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -49.5139, 8.89767, 29.7052)
-metadata/_edit_lock_ = true
 
 [node name="Cube_032" parent="." index="128"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -1.58323e-06, 0, 2.62268e-07, 18.11, -49.5139, 8.89767, -29.9255)
-metadata/_edit_lock_ = true
 
 [node name="Cube_033" parent="." index="129"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 18.11, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.91613e-07, -31.4158, 8.89767, -11.897)
-metadata/_edit_lock_ = true
 
 [node name="Cube_034" parent="." index="130"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 18.11, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 7.91613e-07, -31.4158, 8.89767, 11.5285)
-metadata/_edit_lock_ = true
 
 [node name="Cube_036" parent="." index="131"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.15258e-07, 0, 2.62268e-07, 4.75, -13.2202, 8.89767, 6.80542)
-metadata/_edit_lock_ = true
 
 [node name="Cube_044" parent="." index="132"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -49.7435, 3, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_045" parent="." index="133"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -49.5479, 3, 6.84785)
-metadata/_edit_lock_ = true
 
 [node name="Cube_046" parent="." index="134"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -41.0401, 3, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_047" parent="." index="135"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -32.0185, 3, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_048" parent="." index="136"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -23.4496, 3, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_049" parent="." index="137"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -23.4496, 3, 7.1286)
-metadata/_edit_lock_ = true
 
 [node name="Cube_050" parent="." index="138"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -32.0185, 3, 7.14328)
-metadata/_edit_lock_ = true
 
 [node name="Cube_051" parent="." index="139"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -41.0401, 3, 6.90702)
-metadata/_edit_lock_ = true
 
 [node name="Cube_021" parent="." index="140"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -49.7435, 8.9, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_037" parent="." index="141"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -41.0401, 8.9, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_038" parent="." index="142"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -32.0185, 8.9, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_039" parent="." index="143"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -23.4496, 8.9, -7.48375)
-metadata/_edit_lock_ = true
 
 [node name="Cube_040" parent="." index="144"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -23.4496, 8.9, 7.1286)
-metadata/_edit_lock_ = true
 
 [node name="Cube_041" parent="." index="145"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -32.0185, 8.9, 7.14328)
-metadata/_edit_lock_ = true
 
 [node name="Cube_052" parent="." index="146"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -41.0401, 8.9, 6.90702)
-metadata/_edit_lock_ = true
 
 [node name="Cube_053" parent="." index="147"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.22252e-07, 0, 2.62268e-07, 4.83, -49.5479, 8.9, 6.84785)
-metadata/_edit_lock_ = true
 
 [node name="Cube_035" parent="." index="148"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 6.97, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 3.04668e-07, -6.09306, 8.9, -2.63186)
-metadata/_edit_lock_ = true
 
 [node name="Cube_042" parent="." index="149"]
 transform = Transform3D(-2.18557e-09, -1.14641e-14, 6.97, -4.37114e-09, 3, 0, 0.05, 2.62268e-07, 3.04668e-07, -6.09306, 8.9, 2.07303)
-metadata/_edit_lock_ = true
 
 [node name="Cube_043" parent="." index="150"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -2.07192e-07, 0, 2.62268e-07, 2.37, 0.786842, 8.9, -0.298981)
-metadata/_edit_lock_ = true
 
 [node name="Cube_054" parent="." index="151"]
 transform = Transform3D(-0.05, 0, 0, 0, 3, -4.15258e-07, 0, 2.62268e-07, 4.75, -13.2202, 8.89767, -7.26417)
-metadata/_edit_lock_ = true
 
 [node name="Cube_055" parent="." index="152"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 17.4718, 0.585478, 29.8668)
-metadata/_edit_lock_ = true
 
 [node name="Cube_056" parent="." index="153"]
 transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, 17.4718, 0.585478, 29.8668)
-metadata/_edit_lock_ = true
 
 [node name="Cube_057" parent="." index="154"]
 transform = Transform3D(-4.37114e-08, -1, -4.37114e-08, 0, -4.37114e-08, 1, -1, 4.37114e-08, 1.91069e-15, 15.9375, 0.585478, 29.8668)
-metadata/_edit_lock_ = true
 
-[node name="Plane_006" parent="." index="155"]
-metadata/_edit_lock_ = true
-
-[node name="MallCollisions" type="StaticBody3D" parent="." index="156"]
-metadata/_edit_lock_ = true
+[node name="MallCollisions" type="StaticBody3D" parent="." index="156" groups=["nav_geo"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MallCollisions" index="0"]
 transform = Transform3D(-2.94398e-06, 0, 3.95, 0, 1, 0, -18.07, 0, -6.43537e-07, -68.8155, 5.89767, -29.9672)
@@ -2026,3 +1835,20 @@ metadata/_edit_lock_ = true
 transform = Transform3D(7.04526, 0, 0, 0, 1, 0, 0, 0, 2.37, -6.19712, 11.69, -0.232053)
 shape = SubResource("ConvexPolygonShape3D_fhcp0")
 metadata/_edit_lock_ = true
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." index="157"]
+navigation_mesh = SubResource("NavigationMesh_s221n")
+
+[node name="PatrolPoints" type="Node3D" parent="." index="158"]
+
+[node name="point1" type="Marker3D" parent="PatrolPoints" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.1607, 0, 38.5333)
+
+[node name="point2" type="Marker3D" parent="PatrolPoints" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.7297, 0, -42.3574)
+
+[node name="point3" type="Marker3D" parent="PatrolPoints" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1452, 0, 0)
+
+[node name="point4" type="Marker3D" parent="PatrolPoints" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.9177, 0, 0)
