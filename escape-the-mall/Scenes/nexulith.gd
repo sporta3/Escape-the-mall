@@ -1,5 +1,5 @@
 extends CharacterBody3D
-#bij player moet nog de groupe "Player"toegevoegt worden
+#bij player moet nog de groupe "player"toegevoegt worden
 #bij de map moeten er nog patrol points toegevoegt worden
 
 enum State { PATROL, CHASE }

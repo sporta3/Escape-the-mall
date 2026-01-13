@@ -102,5 +102,6 @@ shape = SubResource("CapsuleShape3D_50glp")
 
 [node name="Main character" type="Node3D" parent="Entity/Player/Playable"]
 
-[node name="player" parent="Entity/Player/Playable/Main character" instance=ExtResource("2_kln2b")]
+[node name="player" parent="Entity/Player/Playable/Main character" groups=["player"] instance=ExtResource("2_kln2b")]
 transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 0.1777, -0.337068)
+collision_layer = 3
