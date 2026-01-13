@@ -1,10 +1,37 @@
-[gd_scene load_steps=12 format=3 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=39 format=3 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://ds8m0arnqo3j5" path="res://Scripts/main.gd" id="1_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bgvssattc00nk" path="res://Scenes/TestPlayer.tscn" id="2_kln2b"]
+[ext_resource type="PackedScene" uid="uid://bv8a4h4fm6ef2" path="res://Blender/Lift door.glb" id="3_v1gob"]
+[ext_resource type="PackedScene" uid="uid://b6dlaesv034vw" path="res://Blender/Plant.glb" id="4_50glp"]
 [ext_resource type="Script" uid="uid://dj8lmep1l78lw" path="res://Scenes/nexulith.gd" id="4_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://iiophf1thj10" path="res://Blender/Bench.glb" id="5_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://c7bjtx2pm3rut" path="res://Blender/Indoor plant.glb" id="6_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://ciikqdpjfdn6x" path="res://Blender/Storage_racks.glb" id="8_grg3l"]
+[ext_resource type="PackedScene" uid="uid://bvheyfwl2cdyg" path="res://Blender/Counter.glb" id="9_frkhe"]
+[ext_resource type="PackedScene" uid="uid://bc1a58eqsiram" path="res://Blender/Small table.glb" id="10_1p5hy"]
+[ext_resource type="PackedScene" uid="uid://bc7tt2k1d63xj" path="res://Blender/Trashcan.glb" id="10_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://dfoq2b4iketvf" path="res://Blender/Kluis+Keypad.glb" id="11_h1m7h"]
+[ext_resource type="PackedScene" uid="uid://1wtgtpwdfa1s" path="res://Blender/Phone.glb" id="12_h1m7h"]
+[ext_resource type="PackedScene" uid="uid://p46a3qfelsdn" path="res://Blender/uploads_files_5804212_Sign_Stand.glb" id="13_346fj"]
+[ext_resource type="PackedScene" uid="uid://cnd1nr5nx10n4" path="res://Blender/uploads_files_6509163_Sign.glb" id="14_0sclb"]
+[ext_resource type="PackedScene" uid="uid://cmj6gva18txu0" path="res://Blender/Mid_Century_Modern_Bar_Sign_Wall_Art.glb" id="15_sxkr1"]
+[ext_resource type="PackedScene" uid="uid://brkys1p6t5m23" path="res://Blender/Posters.glb" id="16_u7mjy"]
+[ext_resource type="PackedScene" uid="uid://dcavylwhau85c" path="res://Blender/Poster2.glb" id="17_4yxf6"]
+[ext_resource type="PackedScene" uid="uid://d3ibwb8tcjvdp" path="res://Blender/Poster3.glb" id="18_qta6b"]
+[ext_resource type="PackedScene" uid="uid://bwdq050f55ncn" path="res://Blender/Poster4.glb" id="19_x3rx7"]
+[ext_resource type="PackedScene" uid="uid://b2ugcmwqdd7w3" path="res://Blender/Poster5.glb" id="20_6heos"]
+[ext_resource type="PackedScene" uid="uid://ixq7gk3gkfq3" path="res://Blender/Poster6.glb" id="21_vvnwx"]
+[ext_resource type="PackedScene" uid="uid://dsanh16n83j2t" path="res://Blender/Poster7.glb" id="22_btbly"]
+[ext_resource type="PackedScene" uid="uid://mhujjxtm2lnk" path="res://Blender/Poster8.glb" id="23_vs04g"]
+[ext_resource type="PackedScene" uid="uid://bdfc3xkttedpg" path="res://Blender/Poster9.glb" id="24_6ehlx"]
+[ext_resource type="PackedScene" uid="uid://cbwh6g28vefnw" path="res://Blender/Poster10.glb" id="25_utia5"]
+[ext_resource type="PackedScene" uid="uid://dcyx5nedg1yor" path="res://Blender/Poster11.glb" id="26_f7hdo"]
+[ext_resource type="PackedScene" uid="uid://bp7g2mi6uy6nj" path="res://Blender/Poster12.glb" id="27_clvyn"]
+[ext_resource type="PackedScene" uid="uid://byby4gojmac1j" path="res://Blender/Crate.glb" id="28_d8m2u"]
+[ext_resource type="PackedScene" uid="uid://b8xikhcuw6ii6" path="res://Blender/Candle.glb" id="29_5psol"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -55,8 +82,210 @@ environment = SubResource("Environment_rgh2o")
 [node name="Interactable" type="Node3D" parent="Time Line/World/Objects"]
 
 [node name="Telefoon" type="Node3D" parent="Time Line/World/Objects/Interactable"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.380194, 0, 0)
+
+[node name="Lift_door_GF" parent="Time Line/World/Objects/Interactable" instance=ExtResource("3_v1gob")]
+transform = Transform3D(1, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -72.7753, 0.192958, -0.165982)
+
+[node name="Lift_door_1F" parent="Time Line/World/Objects/Interactable" instance=ExtResource("3_v1gob")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.9318, 6.01403, -0.13288)
+
+[node name="Kluis+Keypad" parent="Time Line/World/Objects/Interactable" instance=ExtResource("11_h1m7h")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -50.2614, 1.4915, -35.549)
+
+[node name="Phone" parent="Time Line/World/Objects/Interactable" instance=ExtResource("12_h1m7h")]
+transform = Transform3D(3.82137e-16, 8.74228e-09, -0.2, 0.2, -8.74228e-09, 0, -8.74228e-09, -0.2, -8.74228e-09, -44.0128, 1.48646, -7.04433)
 
 [node name="Non-interactable" type="Node3D" parent="Time Line/World/Objects"]
+
+[node name="Plant" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1574, 0.274828, 25.5014)
+
+[node name="Plant2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.104, 0.274827, 15.4608)
+
+[node name="Bench" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("5_vy5pj")]
+transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -61.4009, 0.0210328, 18.8857)
+
+[node name="Bench2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("5_vy5pj")]
+transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -60.894, 0.0771376, 22.4847)
+
+[node name="Plant3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1574, 0.274828, -16.9633)
+
+[node name="Plant4" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.104, 0.274827, -27.0039)
+
+[node name="Bench3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("5_vy5pj")]
+transform = Transform3D(-3.0598e-08, 0, 0.7, 0, 0.7, 0, -0.7, 0, -3.0598e-08, -61.4009, 0.0210328, -23.5791)
+
+[node name="Bench4" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("5_vy5pj")]
+transform = Transform3D(-3.0598e-08, 0, -0.7, 0, 0.7, 0, 0.7, 0, -3.0598e-08, -60.894, 0.0771376, -19.9801)
+
+[node name="Indoor plant" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("6_vy5pj")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -72.1473, 0.0158732, 3.13077)
+
+[node name="Indoor plant2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("6_vy5pj")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -72.1473, 0.0158732, -3.31991)
+
+[node name="Plant5" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.5256, 0.274827, 3.05963)
+
+[node name="Plant6" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -52.73, 0.274827, -3.70456)
+
+[node name="Trashcan" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("10_bmxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1048, 0.0859404, 12.2587)
+
+[node name="Trashcan2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("10_bmxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1048, 0.0859404, 29.1291)
+
+[node name="Trashcan3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("10_bmxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1048, 0.0859404, -13.3435)
+
+[node name="Trashcan4" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("10_bmxlf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -61.1048, 0.0859404, -30.2218)
+
+[node name="Plant7" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -62.5561, 0.274827, 3.05963)
+
+[node name="Plant8" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -62.5561, 0.274827, -3.62982)
+
+[node name="Storage_racks" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -45.3842, 0.015873, -7.17711)
+
+[node name="Storage_racks2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, -45.4939, 0.015873, -10.4117)
+
+[node name="Counter" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("9_frkhe")]
+transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -42.4817, 0.015873, -7.34163)
+
+[node name="Counter2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("9_frkhe")]
+transform = Transform3D(-1.5, 0, -1.31134e-07, 0, 1.5, 0, 1.31134e-07, 0, -1.5, -54.8638, 0.0158731, -37.5485)
+
+[node name="Small table" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("10_1p5hy")]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -50.2427, 0.015873, -36.7622)
+
+[node name="Storage_racks3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -58.3077, 0.015873, -49.2014)
+
+[node name="Storage_racks4" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -58.3077, 0.015873, -46.3458)
+
+[node name="Storage_racks5" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -62.4867, 0.015873, -49.2014)
+
+[node name="Storage_racks6" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -62.5433, 0.015873, -46.3791)
+
+[node name="Storage_racks7" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -66.5172, 0.015873, -49.2014)
+
+[node name="Storage_racks8" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -66.5603, 0.015873, -46.3791)
+
+[node name="Sale_sign" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("13_346fj")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -57.7351, -0.00909436, -35.7141)
+
+[node name="Sale_sign2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("13_346fj")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -64.1933, -0.00909436, -35.7141)
+
+[node name="Wetfloor_sign" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("14_0sclb")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -53.4309, 0.016021, -17.0185)
+
+[node name="Bar_sign" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("15_sxkr1")]
+transform = Transform3D(-1.5, 0, -2.26494e-07, 0, 1.5, 0, 2.26494e-07, 0, -1.5, -45.1484, 4.71869, 2.24159)
+
+[node name="Wetfloor_sign2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("14_0sclb")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -68.7312, 0.0379059, 17.1931)
+
+[node name="Posters" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("16_u7mjy")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -49.803, 3, 14.3632)
+
+[node name="Poster2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("17_4yxf6")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -49.574, 3, 28.7019)
+
+[node name="Poster3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("18_qta6b")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -72.6865, 3, 30.0531)
+
+[node name="Poster4" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("19_x3rx7")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -72.6625, 7.37069, 9.86)
+
+[node name="Poster5" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("20_6heos")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -72.6877, 7.02015, -14.3733)
+
+[node name="Poster6" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("21_vvnwx")]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -72.7069, 7.0912, -26.3302)
+
+[node name="Poster7" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("22_btbly")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -49.6477, 10.9726, -24.8686)
+
+[node name="Poster8" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("23_vs04g")]
+transform = Transform3D(-4.37114e-08, -1, 4.37114e-08, 0, -4.37114e-08, -1, 1, -4.37114e-08, 1.91069e-15, -49.5913, 10.9382, -14.8875)
+
+[node name="Poster9" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("24_6ehlx")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -43.8873, 10.8459, -2.52617)
+
+[node name="Poster10" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("25_utia5")]
+transform = Transform3D(-1, 8.74228e-08, 0, 3.82137e-15, 4.37114e-08, -1, -8.74228e-08, -1, -4.37114e-08, -35.1308, 14.631, 2.17433)
+
+[node name="Poster11" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("26_f7hdo")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -23.0297, 14.2064, -2.43948)
+
+[node name="Poster12" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("27_clvyn")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30.3956, 15.3571, -11.7005)
+
+[node name="Crate" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("28_d8m2u")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -27.7701, -0.427647, -11.0918)
+
+[node name="Candle" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("29_5psol")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -27.7398, 1.08994, -11.0863)
+
+[node name="Crate2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("28_d8m2u")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -28.2502, -0.435078, -3.47361)
+
+[node name="Crate3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("28_d8m2u")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -26.5581, -0.435078, -3.47361)
+
+[node name="Plant9" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.5639, 0.0630319, -21.7198)
+
+[node name="Plant10" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.7197, 0.274828, -21.5954)
+
+[node name="Plant11" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.6944, 0.274828, 20.5447)
+
+[node name="Plant12" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("4_50glp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -71.699, 0.274828, 20.5447)
+
+[node name="Counter3" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("9_frkhe")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -68.2239, 0.0158732, 36.4263)
+
+[node name="Storage_racks9" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -63.6114, 0.0158732, 43.0455)
+
+[node name="Storage_racks10" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -63.6114, 0.0158732, 40.1807)
+
+[node name="Storage_racks11" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -59.0349, 0.0158732, 43.0455)
+
+[node name="Storage_racks12" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -59.0349, 0.0158732, 40.1807)
+
+[node name="Storage_racks13" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -54.0267, 0.0158732, 43.0455)
+
+[node name="Storage_racks14" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -54.0267, 0.0158732, 40.1807)
+
+[node name="Storage_racks15" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -68.1051, 0.0158732, 43.0455)
+
+[node name="Storage_racks16" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("8_grg3l")]
+transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, -68.1051, 0.0158732, 40.1807)
 
 [node name="Mall_V2" parent="Time Line/World" instance=ExtResource("1_idj7w")]
 
