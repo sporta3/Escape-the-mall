@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=40 format=3 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b6dlaesv034vw" path="res://Blender/Plant.glb" id="4_50glp"]
 [ext_resource type="Script" uid="uid://dj8lmep1l78lw" path="res://Scenes/nexulith.gd" id="4_pbw6q"]
 [ext_resource type="PackedScene" uid="uid://iiophf1thj10" path="res://Blender/Bench.glb" id="5_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://k345oqx48873" path="res://Scenes/kluisInterface.tscn" id="6_4yxf6"]
 [ext_resource type="PackedScene" uid="uid://c7bjtx2pm3rut" path="res://Blender/Indoor plant.glb" id="6_vy5pj"]
 [ext_resource type="PackedScene" uid="uid://ciikqdpjfdn6x" path="res://Blender/Storage_racks.glb" id="8_grg3l"]
 [ext_resource type="PackedScene" uid="uid://bvheyfwl2cdyg" path="res://Blender/Counter.glb" id="9_frkhe"]
@@ -95,6 +96,8 @@ transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 
 
 [node name="Phone" parent="Time Line/World/Objects/Interactable" instance=ExtResource("12_h1m7h")]
 transform = Transform3D(3.82137e-16, 8.74228e-09, -0.2, 0.2, -8.74228e-09, 0, -8.74228e-09, -0.2, -8.74228e-09, -44.0128, 1.48646, -7.04433)
+
+[node name="Node2D" parent="Time Line/World/Objects/Interactable" instance=ExtResource("6_4yxf6")]
 
 [node name="Non-interactable" type="Node3D" parent="Time Line/World/Objects"]
 
