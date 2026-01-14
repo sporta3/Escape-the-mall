@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var spring_arm: SpringArm3D = $SpringArm3D
+@onready var animation_player: AnimationPlayer = $"Node3D/Traveler girl Animated 2/AnimationPlayer"
 
 # --------------------
 # Movement values
@@ -12,6 +13,8 @@ const GRAVITY := 30.0
 const FALL_MULTIPLIER := 1.8
 const ACCELERATION := 5.0
 
+var runningAnimationSpeed:= 3.0
+var walkingAnimationSpeed:= 1.5
 # --------------------
 # Mouse sensitivity
 # --------------------
@@ -59,6 +62,7 @@ func _physics_process(delta: float) -> void:
 	var target_speed := WALK_SPEED
 	if Input.is_action_pressed("Sprint"):
 		target_speed = SPRINT_SPEED
+		animation_player.speed_scale = runningAnimationSpeed
 
 	# --------------------
 	# Camera-relative movement
@@ -84,9 +88,14 @@ func _physics_process(delta: float) -> void:
 	var direction := (right * input_dir.x + forward * input_dir.y).normalized()
 
 	if direction:
+		if animation_player.current_animation != "rigAction":
+			animation_player.play("rigAction")
+			animation_player.speed_scale = walkingAnimationSpeed
 		velocity.x = move_toward(velocity.x, direction.x * target_speed, ACCELERATION)
 		velocity.z = move_toward(velocity.z, direction.z * target_speed, ACCELERATION)
 	else:
+		
+		animation_player.stop()
 		velocity.x = move_toward(velocity.x, 0, ACCELERATION)
 		velocity.z = move_toward(velocity.z, 0, ACCELERATION)
 
