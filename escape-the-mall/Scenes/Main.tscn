@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=13 format=3 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://ds8m0arnqo3j5" path="res://Scripts/main.gd" id="1_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bgvssattc00nk" path="res://Scenes/TestPlayer.tscn" id="2_kln2b"]
+[ext_resource type="PackedScene" uid="uid://bxumq0738csjx" path="res://Scenes/kluisInterface.tscn" id="3_v1gob"]
 [ext_resource type="Script" uid="uid://dj8lmep1l78lw" path="res://Scenes/nexulith.gd" id="4_pbw6q"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
@@ -55,6 +56,8 @@ environment = SubResource("Environment_rgh2o")
 [node name="Interactable" type="Node3D" parent="Time Line/World/Objects"]
 
 [node name="Telefoon" type="Node3D" parent="Time Line/World/Objects/Interactable"]
+
+[node name="kluis" parent="Time Line/World/Objects/Interactable" instance=ExtResource("3_v1gob")]
 
 [node name="Non-interactable" type="Node3D" parent="Time Line/World/Objects"]
 
