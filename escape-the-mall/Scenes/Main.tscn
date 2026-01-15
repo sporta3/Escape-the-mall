@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=40 format=3 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://bp7g2mi6uy6nj" path="res://Blender/Poster12.glb" id="27_clvyn"]
 [ext_resource type="PackedScene" uid="uid://byby4gojmac1j" path="res://Blender/Crate.glb" id="28_d8m2u"]
 [ext_resource type="PackedScene" uid="uid://b8xikhcuw6ii6" path="res://Blender/Candle.glb" id="29_5psol"]
+[ext_resource type="PackedScene" uid="uid://bmoaocfn7g6ms" path="res://Blender/Easter_egg.glb" id="33_4yxf6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -333,3 +334,6 @@ shape = SubResource("CapsuleShape3D_50glp")
 
 [node name="player" parent="Entity/Player/Playable/Main character" groups=["Player", "player"] instance=ExtResource("2_kln2b")]
 transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 0.1777, -0.337068)
+
+[node name="Easter_egg" parent="." instance=ExtResource("33_4yxf6")]
+transform = Transform3D(-0.5, -7.54979e-08, 3.30012e-15, 0, -2.18557e-08, -0.5, 7.54979e-08, -0.5, 2.18557e-08, -47.9206, 3.4139, -2.97624)
