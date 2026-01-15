@@ -1,6 +1,6 @@
 extends SpringArm3D
 
-@export var mouse_sensitivity: float = 0.005
+@export var mouse_sensitivity: float = 0.0001
 
 @export var max_zoom: float = 10.0
 @export var min_zoom: float = 0.5
