@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=4 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=48 format=4 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://bp7g2mi6uy6nj" path="res://Blender/Poster12.glb" id="27_clvyn"]
 [ext_resource type="PackedScene" uid="uid://byby4gojmac1j" path="res://Blender/Crate.glb" id="28_d8m2u"]
 [ext_resource type="PackedScene" uid="uid://b8xikhcuw6ii6" path="res://Blender/Candle.glb" id="29_5psol"]
+[ext_resource type="PackedScene" uid="uid://dsplr218h6u1a" path="res://Blender/Ceiling light.glb" id="30_qta6b"]
 [ext_resource type="PackedScene" uid="uid://bmoaocfn7g6ms" path="res://Blender/Easter_egg.glb" id="33_4yxf6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_idj7w"]
@@ -42,7 +43,7 @@ ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
 sky_material = SubResource("ProceduralSkyMaterial_idj7w")
 
 [sub_resource type="Environment" id="Environment_rgh2o"]
-background_energy_multiplier = 0.0
+background_energy_multiplier = 0.15
 sky = SubResource("Sky_kln2b")
 ambient_light_energy = 0.0
 tonemap_mode = 2
@@ -336,9 +337,6 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -30.39
 [node name="Crate" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("28_d8m2u")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -27.7701, -0.427647, -11.0918)
 
-[node name="Candle" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("29_5psol")]
-transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -27.7398, 1.08994, -11.0863)
-
 [node name="Crate2" parent="Time Line/World/Objects/Non-interactable" instance=ExtResource("28_d8m2u")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -28.2502, -0.435078, -3.47361)
 
@@ -386,6 +384,178 @@ transform = Transform3D(-5.68248e-08, 0, 1.3, 0, 1.3, 0, -1.3, 0, -5.68248e-08, 
 
 [node name="Lights" type="Node3D" parent="Time Line/World/Objects/Non-interactable"]
 
+[node name="Ceiling light" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.8192, 2.09195, 0.0794857)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling light"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0.147785, 3.30137, -0.0339813)
+light_color = Color(0.465508, 0.414482, 0.131192, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_2" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.6384, 2.19007, -0.12611)
+visible = false
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_2"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+visible = false
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_3" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -44.6772, 2.1863, -0.283525)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_3"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_4" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.0355, 2.09195, 0.0794857)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_4"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_5" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.0355, 2.09195, 9.56088)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_5"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+visible = false
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_6" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.6224, 2.09195, 9.56088)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_6"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_7" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.6224, 2.09195, 24.5263)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_7"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_8" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.9285, 2.09195, 24.5263)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_8"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_9" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.8903, 2.09195, 41.1677)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_9"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_10" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.0355, 2.09195, -9.44233)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_10"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_11" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.8627, 2.09195, -9.44233)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_11"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_12" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -68.8627, 2.09195, -24.0869)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_12"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+visible = false
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_13" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -53.7855, 2.09195, -24.0869)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_13"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_14" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.9746, 2.09195, -41.8788)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_14"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.415686, 0.129412, 1)
+light_energy = 0.5
+spot_range = 20.0
+spot_angle = 65.0
+
+[node name="Ceiling_light_15" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.1178, 2.11264, 0.158971)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_15"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.0705882, 0.129412, 1)
+light_energy = 2.0
+spot_range = 20.0
+spot_angle = 50.0
+
+[node name="Candle" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("29_5psol")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -27.7398, 1.08994, -11.0863)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Candle"]
+transform = Transform3D(0.666667, 0, 0, 0, 0.666667, 0, 0, 0, 0.666667, 0, 0.482823, 0.0218902)
+light_color = Color(0.752941, 0.545098, 0, 1)
+light_energy = 2.0
+
+[node name="Ceiling_light_16" parent="Time Line/World/Objects/Non-interactable/Lights" instance=ExtResource("30_qta6b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3474, 2.11264, 0.158971)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Time Line/World/Objects/Non-interactable/Lights/Ceiling_light_16"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.61173, 0)
+light_color = Color(0.466667, 0.0705882, 0.129412, 1)
+light_energy = 2.0
+spot_range = 20.0
+spot_angle = 50.0
+
 [node name="Mall_V2" parent="Time Line/World" instance=ExtResource("1_idj7w")]
 
 [node name="Entity" type="Node3D" parent="."]
@@ -429,7 +599,7 @@ shape = SubResource("CapsuleShape3D_50glp")
 transform = Transform3D(-1.93704e-07, 0, 4.44655, 0, 3.27736, 0, -4.43144, 0, -1.94365e-07, -0.195099, 1.69715, -0.0426146)
 
 [node name="Armature" type="Node3D" parent="Entity/NPC/Hostile/Nexulith/basic wolf skull"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00364822, 0.018635, 5.07998e-05)
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0.00364822, 0.018635, 5.07998e-05)
 
 [node name="Skeleton3D" type="Skeleton3D" parent="Entity/NPC/Hostile/Nexulith/basic wolf skull/Armature"]
 bones/0/name = "Top"
@@ -437,7 +607,7 @@ bones/0/parent = -1
 bones/0/rest = Transform3D(0, 1, 1.22585e-06, -1, 0, 5.52335e-07, 5.52335e-07, -1.22585e-06, 1, -0.0427013, 0.0256762, 5.12591e-09)
 bones/0/enabled = true
 bones/0/position = Vector3(-0.0427013, 0.0256762, 5.12591e-09)
-bones/0/rotation = Quaternion(-6.28683e-07, 2.38123e-07, -0.707107, 0.707107)
+bones/0/rotation = Quaternion(-6.28683e-07, 2.38124e-07, -0.707107, 0.707107)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "Bottom"
 bones/1/parent = 0
@@ -465,6 +635,11 @@ skin = SubResource("Skin_nsbjn")
 
 [node name="Light" type="Node3D" parent="Entity/NPC/Hostile/Nexulith/basic wolf skull"]
 transform = Transform3D(-0.344924, -0.149043, -0.926722, 0.151399, 0.96555, -0.211638, 0.92634, -0.213304, -0.310477, 0.08583, 0.0416551, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Entity/NPC/Hostile/Nexulith/basic wolf skull/Light"]
+transform = Transform3D(0.226172, 0.0202304, -0.00545005, -1.86265e-09, 0.298017, -0.0376165, 0, -3.72529e-09, 0.229736, 0.00945854, 0.0603194, -0.0132213)
+light_color = Color(0.477611, 0.171703, 0.190652, 1)
+light_energy = 0.5
 
 [node name="Camera" type="Node3D" parent="Entity/NPC/Hostile/Nexulith/basic wolf skull"]
 transform = Transform3D(-0.376176, 0, -0.471925, 0, 0.603508, 0, 0.471925, 0, -0.376176, 0.061514, 0.0299078, 0)
