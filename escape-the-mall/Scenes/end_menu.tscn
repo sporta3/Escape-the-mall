@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://jnmc1cjqdm2o"]
+
+[ext_resource type="Texture2D" uid="uid://cgvfjruiex4wu" path="res://Pictures/Skull.png" id="1_wrsnd"]
+[ext_resource type="Texture2D" uid="uid://dimw1sgwf76ix" path="res://Pictures/BloodOverlay.png" id="2_rrpri"]
+[ext_resource type="Script" uid="uid://02nunusrn2hu" path="res://Scripts/Game_over.gd" id="3_rrpri"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e214x"]
+font_size = 100
+font_color = Color(1, 0.923215, 0.915538, 1)
+
+[node name="End menu" type="Node3D" groups=["ui"]]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer" groups=["ui"]]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_rrpri")
+
+[node name="Skull" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(590, 313)
+scale = Vector2(1.26173, 1.23077)
+texture = ExtResource("1_wrsnd")
+
+[node name="BloodOverlay" type="Sprite2D" parent="CanvasLayer/Control"]
+position = Vector2(576.5, 325)
+scale = Vector2(0.896094, 0.8125)
+texture = ExtResource("2_rrpri")
+
+[node name="Label" type="Label" parent="CanvasLayer/Control"]
+offset_left = 140.0
+offset_top = 32.0
+offset_right = 1017.0
+offset_bottom = 169.0
+text = "You didn't escape!"
+label_settings = SubResource("LabelSettings_e214x")
+
+[node name="restart" type="Button" parent="CanvasLayer/Control"]
+offset_left = 504.0
+offset_top = 194.4
+offset_right = 648.0
+offset_bottom = 259.2
+text = "Restart"
+
+[node name="options" type="Button" parent="CanvasLayer/Control"]
+offset_left = 504.0
+offset_top = 265.2
+offset_right = 648.0
+offset_bottom = 330.0
+text = "Options"
+
+[node name="quit" type="Button" parent="CanvasLayer/Control"]
+offset_left = 504.0
+offset_top = 336.0
+offset_right = 648.0
+offset_bottom = 400.8
+text = "Quit"
+
+[connection signal="pressed" from="CanvasLayer/Control/restart" to="CanvasLayer/Control" method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/quit" to="CanvasLayer/Control" method="_on_quit_pressed"]

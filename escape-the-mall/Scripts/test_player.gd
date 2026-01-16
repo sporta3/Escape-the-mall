@@ -1,6 +1,8 @@
 extends CharacterBody3D
 
 @onready var spring_arm: SpringArm3D = $SpringArm3D
+@onready var animation_player: AnimationPlayer = $"Node3D/Traveler girl Animated 2/AnimationPlayer"
+
 
 # --------------------
 # Movement values
@@ -12,6 +14,8 @@ const GRAVITY := 30.0
 const FALL_MULTIPLIER := 1.8
 const ACCELERATION := 5.0
 
+var runningAnimationSpeed:= 3.0
+var walkingAnimationSpeed:= 1.5
 # --------------------
 # Mouse sensitivity
 # --------------------
@@ -59,6 +63,7 @@ func _physics_process(delta: float) -> void:
 	var target_speed := WALK_SPEED
 	if Input.is_action_pressed("Sprint"):
 		target_speed = SPRINT_SPEED
+		animation_player.speed_scale = runningAnimationSpeed
 
 	# --------------------
 	# Camera-relative movement
@@ -84,10 +89,37 @@ func _physics_process(delta: float) -> void:
 	var direction := (right * input_dir.x + forward * input_dir.y).normalized()
 
 	if direction:
+		if animation_player.current_animation != "rigAction":
+			animation_player.play("rigAction")
+			animation_player.speed_scale = walkingAnimationSpeed
 		velocity.x = move_toward(velocity.x, direction.x * target_speed, ACCELERATION)
 		velocity.z = move_toward(velocity.z, direction.z * target_speed, ACCELERATION)
 	else:
+		
+		animation_player.stop()
 		velocity.x = move_toward(velocity.x, 0, ACCELERATION)
 		velocity.z = move_toward(velocity.z, 0, ACCELERATION)
 
 	move_and_slide()
+
+
+#Bellow is death script 
+var is_dead := false
+
+func die():
+	#if is_dead:
+		#return
+	is_dead = true
+
+	# Stop player input & movement
+	velocity = Vector3.ZERO
+
+	# Optional: play death animation
+
+
+	# Show Game Over UI
+	get_tree().call_group("ui", "show_game_over")
+	
+	# Pause the game after a short delay (so animation can start)
+	await get_tree().create_timer(0.3).timeout
+	get_tree().paused = true

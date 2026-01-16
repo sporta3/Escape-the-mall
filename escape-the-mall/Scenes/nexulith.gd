@@ -96,6 +96,11 @@ func _move_along_path(delta: float, speed: float) -> void:
 
 	move_and_slide()
 
+	for i in get_slide_collision_count():
+		var collision := get_slide_collision(i)
+		_on_player_hit(collision.get_collider())
+
+
 func _set_target(pos: Vector3) -> void:
 	var nav_map := get_world_3d().navigation_map
 	if NavigationServer3D.map_get_iteration_id(nav_map) == 0:
@@ -145,3 +150,10 @@ func set_patrol_points(holder: Node3D) -> void:
 
 	if patrol_points.size() > 0:
 		call_deferred("_set_target", patrol_points[patrol_index].global_position)
+
+func _on_player_hit(body: Node) -> void:
+	if body.is_in_group("player"):
+		print("body entered")
+		if body.has_method("die"):
+			body.die()
+			print("die functie")
