@@ -1,12 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://k345oqx48873"]
 
-[ext_resource type="Script" uid="uid://q3n16hkyd6nj" path="res://Scenes/Kluiscontrol.gd" id="1_e1wu8"]
+[ext_resource type="Script" path="res://Scenes/Kluiscontrol.gd" id="1_e1wu8"]
 [ext_resource type="Texture2D" uid="uid://qlbn8v8doo8f" path="res://Scenes/kluis.png" id="2_e1wu8"]
 
 [node name="Node2D" type="Node2D"]
 process_mode = 2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="Control" type="Control" parent="CanvasLayer"]
 process_mode = 2
