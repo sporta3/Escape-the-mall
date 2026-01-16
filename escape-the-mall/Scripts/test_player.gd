@@ -3,6 +3,7 @@ extends CharacterBody3D
 @onready var spring_arm: SpringArm3D = $SpringArm3D
 @onready var animation_player: AnimationPlayer = $"Node3D/Traveler girl Animated 2/AnimationPlayer"
 
+
 # --------------------
 # Movement values
 # --------------------
@@ -100,3 +101,25 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, ACCELERATION)
 
 	move_and_slide()
+
+
+#Bellow is death script 
+var is_dead := false
+
+func die():
+	#if is_dead:
+		#return
+	is_dead = true
+
+	# Stop player input & movement
+	velocity = Vector3.ZERO
+
+	# Optional: play death animation
+
+
+	# Show Game Over UI
+	get_tree().call_group("ui", "show_game_over")
+	
+	# Pause the game after a short delay (so animation can start)
+	await get_tree().create_timer(0.3).timeout
+	get_tree().paused = true

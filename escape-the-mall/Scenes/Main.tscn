@@ -1,10 +1,11 @@
-[gd_scene load_steps=48 format=4 uid="uid://c1eyumc3h1lbi"]
+[gd_scene load_steps=49 format=4 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
 [ext_resource type="PackedScene" uid="uid://gsu4ubcccugu" path="res://Scenes/start_menu.tscn" id="1_kln2b"]
 [ext_resource type="Script" uid="uid://ds8m0arnqo3j5" path="res://Scripts/main.gd" id="1_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://bgvssattc00nk" path="res://Scenes/TestPlayer.tscn" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://bv8a4h4fm6ef2" path="res://Blender/Lift door.glb" id="3_v1gob"]
+[ext_resource type="PackedScene" uid="uid://jnmc1cjqdm2o" path="res://Scenes/end_menu.tscn" id="3_x3rx7"]
 [ext_resource type="PackedScene" uid="uid://b6dlaesv034vw" path="res://Blender/Plant.glb" id="4_50glp"]
 [ext_resource type="Script" uid="uid://dj8lmep1l78lw" path="res://Scenes/nexulith.gd" id="4_pbw6q"]
 [ext_resource type="PackedScene" uid="uid://iiophf1thj10" path="res://Blender/Bench.glb" id="5_vy5pj"]
@@ -167,7 +168,8 @@ environment = SubResource("Environment_rgh2o")
 
 [node name="Start menu" parent="Menu" instance=ExtResource("1_kln2b")]
 
-[node name="End menu" type="Node3D" parent="Menu"]
+[node name="End menu" parent="Menu" groups=["ui"] instance=ExtResource("3_x3rx7")]
+visible = false
 
 [node name="Died" type="Node3D" parent="."]
 
@@ -650,7 +652,7 @@ transform = Transform3D(-0.376176, 0, -0.471925, 0, 0.603508, 0, 0.471925, 0, -0
 
 [node name="Main character" type="Node3D" parent="Entity/Player/Playable" groups=["Player", "player"]]
 
-[node name="player" parent="Entity/Player/Playable/Main character" groups=["Player", "player"] instance=ExtResource("2_kln2b")]
+[node name="player" parent="Entity/Player/Playable/Main character" groups=["Player", "player", "ui"] instance=ExtResource("2_kln2b")]
 transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 0.1777, -0.337068)
 
 [node name="Easter_egg" parent="." instance=ExtResource("33_4yxf6")]
