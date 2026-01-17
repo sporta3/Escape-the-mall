@@ -1,3 +1,4 @@
+[gd_scene load_steps=43 format=3 uid="uid://c1eyumc3h1lbi"]
 [gd_scene load_steps=49 format=4 uid="uid://c1eyumc3h1lbi"]
 
 [ext_resource type="PackedScene" uid="uid://dowfypc47gl4c" path="res://Scenes/mall_v_2.tscn" id="1_idj7w"]
@@ -8,8 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://jnmc1cjqdm2o" path="res://Scenes/end_menu.tscn" id="3_x3rx7"]
 [ext_resource type="PackedScene" uid="uid://b6dlaesv034vw" path="res://Blender/Plant.glb" id="4_50glp"]
 [ext_resource type="Script" uid="uid://dj8lmep1l78lw" path="res://Scenes/nexulith.gd" id="4_pbw6q"]
+[ext_resource type="Script" uid="uid://12ew52xsuhgb" path="res://Blender/kluis+keypad.gd" id="5_qta6b"]
 [ext_resource type="PackedScene" uid="uid://iiophf1thj10" path="res://Blender/Bench.glb" id="5_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://k345oqx48873" path="res://Scenes/kluisInterface.tscn" id="6_4yxf6"]
 [ext_resource type="PackedScene" uid="uid://c7bjtx2pm3rut" path="res://Blender/Indoor plant.glb" id="6_vy5pj"]
+[ext_resource type="PackedScene" uid="uid://cfkyb4sy2utid" path="res://Scenes/tooltip.tscn" id="6_x3rx7"]
 [ext_resource type="PackedScene" uid="uid://ciikqdpjfdn6x" path="res://Blender/Storage_racks.glb" id="8_grg3l"]
 [ext_resource type="PackedScene" uid="uid://bvheyfwl2cdyg" path="res://Blender/Counter.glb" id="9_frkhe"]
 [ext_resource type="PackedScene" uid="uid://bc1a58eqsiram" path="res://Blender/Small table.glb" id="10_1p5hy"]
@@ -49,6 +53,9 @@ sky = SubResource("Sky_kln2b")
 ambient_light_energy = 0.0
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x3rx7"]
+size = Vector3(5.51654, 9.37347, 4.30249)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_v1gob"]
 radius = 14.641
@@ -162,6 +169,10 @@ script = ExtResource("1_rgh2o")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh2o")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0.0622601, 0.402717, 0.913205, -0.496112, 0.806422, -0.321803, -3.48329, 3.7694, -1.15972)
+shadow_enabled = true
+
 [node name="Menu" type="Node3D" parent="."]
 
 [node name="Pauze menu" type="Node3D" parent="Menu"]
@@ -181,6 +192,10 @@ visible = false
 
 [node name="Interactable" type="Node3D" parent="Time Line/World/Objects"]
 
+[node name="kluisinterface" parent="Time Line/World/Objects/Interactable" instance=ExtResource("6_4yxf6")]
+process_mode = 0
+visible = false
+
 [node name="Telefoon" type="Node3D" parent="Time Line/World/Objects/Interactable"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.380194, 0, 0)
 
@@ -192,6 +207,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72.9318, 6.01403, -0.13288)
 
 [node name="Kluis+Keypad" parent="Time Line/World/Objects/Interactable" instance=ExtResource("11_h1m7h")]
 transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, -50.2614, 1.4915, -35.549)
+script = ExtResource("5_qta6b")
+
+[node name="Area3D" type="Area3D" parent="Time Line/World/Objects/Interactable/Kluis+Keypad"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.40254, 2.83604)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Time Line/World/Objects/Interactable/Kluis+Keypad/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.25827, 0.245819, 1.00191)
+shape = SubResource("BoxShape3D_x3rx7")
+
+[node name="tooltip" parent="Time Line/World/Objects/Interactable/Kluis+Keypad" instance=ExtResource("6_x3rx7")]
+visible = false
 
 [node name="Phone" parent="Time Line/World/Objects/Interactable" instance=ExtResource("12_h1m7h")]
 transform = Transform3D(3.82137e-16, 8.74228e-09, -0.2, 0.2, -8.74228e-09, 0, -8.74228e-09, -0.2, -8.74228e-09, -44.0128, 1.48646, -7.04433)
@@ -655,5 +681,8 @@ transform = Transform3D(-0.376176, 0, -0.471925, 0, 0.603508, 0, 0.471925, 0, -0
 [node name="player" parent="Entity/Player/Playable/Main character" groups=["Player", "player", "ui"] instance=ExtResource("2_kln2b")]
 transform = Transform3D(0.0598291, 0, 0.998209, 0, 1, 0, -0.998209, 0, 0.0598291, -1.9099, 0.1777, -0.337068)
 
+[connection signal="visibility_changed" from="Time Line/World/Objects/Interactable/kluisinterface" to="Time Line/World/Objects/Interactable/Kluis+Keypad" method="_on_kluisinterface_visibility_changed"]
+[connection signal="body_entered" from="Time Line/World/Objects/Interactable/Kluis+Keypad/Area3D" to="Time Line/World/Objects/Interactable/Kluis+Keypad" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Time Line/World/Objects/Interactable/Kluis+Keypad/Area3D" to="Time Line/World/Objects/Interactable/Kluis+Keypad" method="_on_area_3d_body_exited"]
 [node name="Easter_egg" parent="." instance=ExtResource("33_4yxf6")]
 transform = Transform3D(-0.5, -7.54979e-08, 3.30012e-15, 0, -2.18557e-08, -0.5, 7.54979e-08, -0.5, 2.18557e-08, -47.9206, 3.4139, -2.97624)

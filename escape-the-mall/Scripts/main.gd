@@ -5,7 +5,7 @@ var niks = 0
 @onready var endMenu := $Menu/"Start menu"/CanvasLayer/Control
 @onready var nexulith := $Entity/NPC/Hostile/Nexulith
 @onready var map := $"Time Line/World/Mall_V2"
-
+@onready var kluis_ui: CanvasLayer = $"Time Line/World/Objects/Interactable/kluisinterface/CanvasLayer"
 var GameStarted = false
 var alive = true
 # Called when the node enters the scene tree for the first time.
@@ -29,6 +29,8 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func toggle_pause():
 	var paused := get_tree().paused
+	if kluis_ui.visible:
+		kluis_ui.visible = false
 	get_tree().paused = !paused
 	if !GameStarted:
 		startMenu.visible = !paused
