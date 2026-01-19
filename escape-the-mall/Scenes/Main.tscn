@@ -168,10 +168,6 @@ script = ExtResource("1_rgh2o")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rgh2o")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0.0622601, 0.402717, 0.913205, -0.496112, 0.806422, -0.321803, -3.48329, 3.7694, -1.15972)
-shadow_enabled = true
-
 [node name="Menu" type="Node3D" parent="."]
 
 [node name="Pauze menu" type="Node3D" parent="Menu"]
